@@ -1,0 +1,10 @@
+type Dog @table @export {
+	id: ID @primaryKey
+	name: String
+	breed: String
+}
+
+type NextCache @table(expiration: 3600) @export {
+    id: ID @primaryKey
+    pageContent: String
+}
